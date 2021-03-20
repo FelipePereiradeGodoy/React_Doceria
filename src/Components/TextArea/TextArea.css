@@ -1,0 +1,18 @@
+.TextArea-block {
+    position: relative;
+}
+
+.TextArea-block label{
+    font-size: 20px red;
+}
+
+.TextArea-block TextArea {
+    width: 300px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: grey;
+    border: solid green;
+    resize: vertical;
+    font: 20px black;
+}

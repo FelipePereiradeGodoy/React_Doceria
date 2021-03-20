@@ -1,7 +1,7 @@
 import React from 'react';
 import  {BrowserRouter, Switch, Route } from 'react-router-dom';
-import Login from './pages/Login';
-import CadastrarDoces from './pages/CadastrarDoces';
+import Login from './pages/Login/Login';
+import CadastrarDoces from './pages/CadastrarDoces/CadastrarDoces';
 
 
 function Routes(){

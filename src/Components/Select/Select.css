@@ -1,0 +1,27 @@
+.Select-block{
+    position: relative;
+}
+
+.Select-block label{
+    font: 20px blue;
+}
+
+.Select-block select{
+    width: 300px;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: hotpink;
+    border: solid;
+    font: 20px grey;
+}
+
+.Select-block select option {
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: indigo;
+    border: solid;
+    font: 20px black
+}
