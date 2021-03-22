@@ -3,8 +3,11 @@
 }
 
 .select-block label{
-    font: 20px;
-    color: red;
+    color: black;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 3px;
 }
 
 .select-block select{
@@ -12,12 +15,14 @@
     height: 50px;
     margin-top: 5px;
     margin-bottom: 10px;
-    background: gray;
-    border: solid;
+    background-color: yellow;
+    color: red;
+    border-radius: 3px;
+    border-color: blue;
+
 }
 
 .select-block select option {
-    border-radius: 50px;
-    background: white;
-    border: solid;
+    background-color: blue;
+    color: black;
 }

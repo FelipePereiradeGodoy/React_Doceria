@@ -1,0 +1,20 @@
+.page-cadastrarDoces{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: violet;
+}
+
+.page-cadastrarDoces main form fieldset{
+    background-color: white;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.page-cadastrarDoces main form fieldset legend{
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+}

@@ -3,7 +3,11 @@
 }
 
 .TextArea-block label{
-    font-size: 20px red;
+    color: black;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 3px;
 }
 
 .TextArea-block TextArea {
@@ -11,8 +15,8 @@
     height: 50px;
     margin-top: 5px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    background: grey;
+    border-radius: 3px;
+    background: blueviolet;
     border: solid green;
     resize: vertical;
     font: 20px black;

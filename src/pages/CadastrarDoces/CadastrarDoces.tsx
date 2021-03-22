@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import Input from '../../Components/Input/Input';
 import Select from '../../Components/Select/Select';
 import TextArea from '../../Components/TextArea/TextArea';
+import Button from '../../Components/Button/Button';
+import './CadastrarDoces.css';
 
 
 function CadastrarDoces(){
@@ -13,7 +15,7 @@ function CadastrarDoces(){
 
 
     return(
-        <div>
+        <div className="page-cadastrarDoces">
             <main>
                 <form>
                     <fieldset>
@@ -55,7 +57,8 @@ function CadastrarDoces(){
                             onChange={(e) => { setPraparationMode(e.target.value) }}               
                         />                        
                                        
-                        {/* Colocar componente para adicionar foto */}                        
+                        {/* Colocar componente para adicionar foto */}
+                        <Button label="Save" />                        
                        
                     </fieldset>
                 </form>

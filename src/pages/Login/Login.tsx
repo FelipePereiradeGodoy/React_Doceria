@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-
-
+import Input from '../../Components/Input/Input';
+import Button from '../../Components/Button/Button';
+import './Login.css';
 
 function Login(){
     
@@ -9,24 +10,16 @@ function Login(){
     
     
     return(
-        <div id="page-login">
+        <div className="page-login">
             <main>
                 <form action="">
                     <fieldset>
                         <legend>Login</legend>
                         
-                        <div>
-                            <label htmlFor="userName">User Name</label>
-                            <input id="userName" value={userName} type="text" onChange={(e) => { setUserName(e.target.value) }} />
-                        </div>
-
-                        <div>
-                            <label htmlFor="password">Password</label>
-                            <input id="password" value={password} type="password" onChange={(e) => { setPassword(e.target.value) }} />
-                        </div>
-
+                        <Input name="userName" label="User Name" value={userName} onChange={(e) => { setUserName(e.target.value) }} />                        
+                        <Input name="password" label="Password" value={password} onChange={(e) => { setPassword(e.target.value) }} />
                         
-                        <button className="button-submit" type="submit">Submit</button>
+                        <Button label="Sig in" type="submit" />
                         
                     </fieldset>
                 </form>

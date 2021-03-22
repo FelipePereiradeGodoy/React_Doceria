@@ -1,0 +1,20 @@
+.page-login{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.page-login main form fieldset{
+    border-radius: 5px;
+    border-color: red;
+    background-color: white;
+}
+
+.page-login main form fieldset legend{
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+}
