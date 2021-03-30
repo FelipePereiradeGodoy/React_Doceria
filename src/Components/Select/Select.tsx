@@ -14,11 +14,16 @@ interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
 
 const Select: React.FC<SelectProps> = ({ label, name, options, ...rest}) => {
     const [isModalOpen, setModalState] = React.useState(false);
-    const toggleModal = () => setModalState(!isModalOpen);
 
-    useEffect(() => {
-        console.log(isModalOpen);
-    });
+    /**
+     * Sempre que uma ação disparada através do escopo JSX for alterar algum state
+     * é bom utilizar o hook "useCallback" para essa ação, passando como parametro no []
+     * o state que ele irá impactar.
+     */
+    const openModal: Function = React.useCallback((event: Event): void => {
+        event.preventDefault();
+        setModalState(true);
+    }, [isModalOpen]);
 
     return(
         <div className="select-block">
@@ -35,7 +40,7 @@ const Select: React.FC<SelectProps> = ({ label, name, options, ...rest}) => {
             </select>
 
             <button
-              onClick={toggleModal}
+              onClick={(event) => openModal(event)}
             >
                 +
             </button>
@@ -43,7 +48,7 @@ const Select: React.FC<SelectProps> = ({ label, name, options, ...rest}) => {
             <Modal
               title={'Novo'}
               isOpen={isModalOpen}
-              onClose={toggleModal}
+              onClose={() => setModalState(false)}
             >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas reiciendis minima tenetur molestiae voluptates! Aut natus doloremque recusandae est, laudantium ducimus mollitia. Est sunt quam iure. Quasi neque maiores soluta.
             </Modal>
