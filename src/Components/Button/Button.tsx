@@ -3,11 +3,12 @@ import './Button.css';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLObjectElement>{
     label:string;
+    nameClass: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, ...rest}) => {
+const Button: React.FC<ButtonProps> = ({ label, nameClass, ...rest}) => {
     return(
-        <div className="button-block">
+        <div className={nameClass}>
             <button>{label}</button>
         </div>
     );

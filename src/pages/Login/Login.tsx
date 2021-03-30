@@ -19,7 +19,7 @@ function Login(){
                         <Input name="userName" label="User Name" value={userName} onChange={(e) => { setUserName(e.target.value) }} />                        
                         <Input name="password" label="Password" value={password} onChange={(e) => { setPassword(e.target.value) }} />
                         
-                        <Button label="Sig in" type="submit" />
+                        <Button nameClass="button-block" label="Sig in" type="submit" />
                         
                     </fieldset>
                 </form>

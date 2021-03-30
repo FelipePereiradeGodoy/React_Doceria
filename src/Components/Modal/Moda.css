@@ -1,0 +1,10 @@
+.modal{
+    background-color: red;
+    display: none;
+    position: fixed;
+    width: 200px;
+    height: 150px;
+    left: 200px;
+    top: 40px;
+    color: black;
+}

@@ -16,3 +16,8 @@
     font-weight: lighter;
     border-radius: 5px;
 }
+
+.button-block-add{
+    display: inline;
+    position: relative;
+}

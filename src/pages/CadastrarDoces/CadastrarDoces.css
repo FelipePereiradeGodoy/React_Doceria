@@ -18,3 +18,34 @@
     color: black;
     text-align: center;
 }
+
+.page-cadastrarDoces main form fieldset .block-select_button{
+    background-color: grey;
+    display: flex;
+}
+
+.page-cadastrarDoces main form fieldset .block-select_button Select{
+    width: 250px;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: yellow;
+    color: red;
+    border-radius: 3px;
+    border-color: blue;
+}
+
+.page-cadastrarDoces main form fieldset .block-select_button Button{
+    width: 50px;
+    height: 50px;
+    padding: none;
+    margin-left: 6px;
+    margin-top: 41%;
+    background-color: violet;
+    border-color: blue;
+    border-radius: 3px;
+}
+
+.show{
+    display: block;
+}

@@ -1,5 +1,6 @@
 .select-block{
-        position: relative;
+    display: inline;
+    position: relative;
 }
 
 .select-block label{
@@ -8,18 +9,6 @@
     font-size: 15px;
     font-weight: bold;
     margin-left: 3px;
-}
-
-.select-block select{
-    width: 300px;
-    height: 50px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    background-color: yellow;
-    color: red;
-    border-radius: 3px;
-    border-color: blue;
-
 }
 
 .select-block select option {
