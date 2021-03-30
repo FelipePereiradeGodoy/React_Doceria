@@ -1,4 +1,4 @@
-import React, { SelectHTMLAttributes } from 'react';
+import React, { SelectHTMLAttributes, useEffect } from 'react';
 import Modal from '../Modal/Modal';
 import './Select.css';
 
@@ -16,6 +16,9 @@ const Select: React.FC<SelectProps> = ({ label, name, options, ...rest}) => {
     const [isModalOpen, setModalState] = React.useState(false);
     const toggleModal = () => setModalState(!isModalOpen);
 
+    useEffect(() => {
+        console.log(isModalOpen);
+    });
 
     return(
         <div className="select-block">
