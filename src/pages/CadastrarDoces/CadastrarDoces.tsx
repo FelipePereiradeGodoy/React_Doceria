@@ -1,19 +1,28 @@
-import React, {useState} from 'react';
+import React, {useLayoutEffect, useState} from 'react';
 import Input from '../../Components/Input/Input';
 import Select from '../../Components/Select/Select';
 import TextArea from '../../Components/TextArea/TextArea';
 import Button from '../../Components/Button/Button';
 
 import './CadastrarDoces.css';
+import { useHistory } from 'react-router';
 
 
 function CadastrarDoces(){
+    const history = useHistory();
     const [name, setName] = useState('');
     const [category, setCategory] = useState('');
     const [type, setType] = useState('');
     const [price, setPrice] = useState('');
     const [preparationMode, setPraparationMode] = useState('');
     
+    /**
+     * Validar se o usuário está logado na aplicação, caso não estiver, joga ele para /login.
+     */
+    useLayoutEffect(() => {
+      if (!(Boolean(sessionStorage.getItem('logged'))))
+        history.push('login');
+    }, []);
 
     return(
         <div className="page-cadastrarDoces">
