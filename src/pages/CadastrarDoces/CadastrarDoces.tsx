@@ -24,38 +24,31 @@ function CadastrarDoces(){
 
                         <Input name="name" label="Nome" value={name} onChange={(e) => { setName(e.target.value) }} />
                         
-                        <div className="block-select_button">
-                            <Select 
-                                name="category"
-                                label="Categorias"
-                                value={category}
-                                onChange={(e) => { setCategory(e.target.value) }}
-                                options={[
-                                    { value: 'chicolates', label: 'Chocolates'},
-                                    { value: 'desserts', label: 'Sobremesas'},
-                                    { value: 'cakes', label: 'Bolos'},
-
-                                ]}                        
-                            />
-
-                            <Button nameClass="button-block-add" label="+" />
-                        </div>
                         
-                        <div className="block-select_button">
-                            <Select 
-                                name="type"
-                                label="Tipos de Doces"
-                                value={type}
-                                onChange={(e) => { setType(e.target.value) }}
-                                options={[
-                                    { value: 'bonbons', label: 'Bombons'},
-                                    { value: 'pies', label: 'Tortas'},
-                                    { value: 'stuffed cakes', label: 'Bolos Recheados'},
-                                ]}                        
-                            />   
+                        <Select 
+                          name="category"
+                          label="Categorias"
+                          value={category}
+                          onChange={(e) => { setCategory(e.target.value) }}
+                          options={[
+                            { value: 'chicolates', label: 'Chocolates'},
+                            { value: 'desserts', label: 'Sobremesas'},
+                            { value: 'cakes', label: 'Bolos'},
+                          ]}                        
+                        />
 
-                            <Button nameClass="button-block-add" label="+" />
-                        </div>                       
+                        <Select 
+                          name="type"
+                          label="Tipos de Doces"
+                          value={type}
+                          onChange={(e) => { setType(e.target.value) }}
+                          options={[
+                            { value: 'bonbons', label: 'Bombons'},
+                            { value: 'pies', label: 'Tortas'},
+                            { value: 'stuffed cakes', label: 'Bolos Recheados'},
+                          ]}                        
+                        />   
+
                                    
                         <Input name="price" label="Preço" value={price} onChange={(e) => { setPrice(e.target.value) }} />                        
                        
@@ -67,7 +60,7 @@ function CadastrarDoces(){
                         />                        
                                        
                         {/* Colocar componente para adicionar foto */}
-                        <Button nameClass="button-block" label="Save" />                        
+                        <Button label="Save" />                        
                        
                     </fieldset>
                 </form>
