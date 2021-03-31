@@ -20,11 +20,12 @@ const Select: React.FC<SelectProps> = ({ label, name, options, ...rest}) => {
      * é bom utilizar o hook "useCallback" para essa ação, passando como parametro no []
      * o state que ele irá impactar.
      */
+    {/*
     const openModal: Function = React.useCallback((event: Event): void => {
         event.preventDefault();
         setModalState(true);
     }, [isModalOpen]);
-
+    */}
     return(
         <div className="select-block">
             <label htmlFor={name}>{label}</label>
@@ -44,7 +45,7 @@ const Select: React.FC<SelectProps> = ({ label, name, options, ...rest}) => {
             >
                 +
             </button>
-            
+      {/*       
             <Modal
               title={'Novo'}
               isOpen={isModalOpen}
@@ -52,6 +53,7 @@ const Select: React.FC<SelectProps> = ({ label, name, options, ...rest}) => {
             >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas reiciendis minima tenetur molestiae voluptates! Aut natus doloremque recusandae est, laudantium ducimus mollitia. Est sunt quam iure. Quasi neque maiores soluta.
             </Modal>
+      */}      
         </div>
     );
 }
